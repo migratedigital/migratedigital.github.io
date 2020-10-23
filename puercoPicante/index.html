@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="css/master.css">
     <title>Menú Cerdo Picante</title>
   </head>
-  <body>
+  <body onload="efecto()">
     <div class="container">
       <img src="imgs/cerdo.png" alt="ilustracion base comida">
       <p class="titulo">Cerdo Picante</p>
@@ -75,12 +75,12 @@
 
       }
 
-      document.addEventListener("load", function(){
+      function efecto(){
         //Se ejecuta hasta que la página cargó
         titulo.style.fontSize = "6.8rem";
         tituloSecundario = document.getElementById("clic");
         tituloSecundario.style.letterSpacing = "-4px";
-      });
+      };
     </script>
   </body>
 </html>
