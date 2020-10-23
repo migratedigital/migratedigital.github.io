@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../css/master.css">
+  <title>Bebidas Cerdo Picante</title>
+</head>
+
+<body>
+  <div class="container2">
+    <span style="display:none; font-size: 1px;"></span>
+    <span class="ilustracion">
+      <img src="../imgs/clamato.jpg" width="1500" alt="ilustracion base comida">
+    </span>
+    <p class="titulo-secundario">Cervceza</p>
+
+    <div class="flexionado-horizontal">
+      <div class="horizontalCard" id="helado">
+        <p>CERDO</p>
+        <p>Chuleta, longaniza ahumada, queso manchego y cebolla</p>
+        <p>$75</p>
+      </div>
+      <div style="padding-top:3.4rem;"></div>
+      <div class="horizontalCard" id="helado">
+        <p>Helado</p>
+        <p>$15</p>
+      </div>
+      <div style="padding-top:3.4rem;"></div>
+      <div class="horizontalCard" id="helado">
+        <p>Helado</p>
+        <p>$15</p>
+      </div>
+      <div style="padding-top:3.4rem;"></div>
+      <div class="horizontalCard" id="helado">
+        <p>Helado</p>
+        <p>$15</p>
+      </div>
+    </div>
+
+    <div style="padding-top:3.4rem;"></div>
+    <span class="ilustracion">
+      <img src="../imgs/coctel.jpg" width="1500" alt="ilustracion base comida">
+    </span>
+
+    <p class="titulo-secundario">Bebidas calientes</p>
+
+    <div class="flexionado-horizontal">
+      <div class="horizontalCard" id="helado">
+        <p>CERDO</p>
+        <p>Chuleta, longaniza ahumada, queso manchego y cebolla</p>
+        <p>$74</p>
+      </div>
+      <div style="padding-top:3.4rem;"></div>
+      <div class="horizontalCard" id="helado">
+        <p>Helado</p>
+        <p>$15</p>
+      </div>
+      <div style="padding-top:3.4rem;"></div>
+      <div class="horizontalCard" id="helado">
+        <p>Helado</p>
+        <p>$15</p>
+      </div>
+      <div style="padding-top:3.4rem;"></div>
+      <div class="horizontalCard" id="helado">
+        <p>Helado</p>
+        <p>$15</p>
+      </div>
+    </div>
+
+    <div style="padding-top:35em;"></div>
+
+    <div class="final">
+      <nav id="navbar" onclick="mostrar();">
+        <span class="clicable">Volver</span>
+        <div style="padding: 1rem 0;"></div>
+        <span id="contenido-nav">
+          <a href="../index.html">
+            <div class="tarjeta2">
+              <span class="imagen-regresar">
+                <img style="height:1em; width:auto;" src="../imgs/regreso.png" alt="back">
+              </span>
+              <span style="padding-right:5rem;"></span>
+              Inicio
+            </div>
+          </a>
+          <div style="padding: 1.5rem 0;"></div>
+        </span>
+      </nav>
+    </div>
+  </div>
+  <script type="text/javascript">
+    let navbarSpan = document.getElementById("contenido-nav");
+    let desplegada = false;
+
+    function mostrar() {
+      let navbar = document.getElementById("navbar");
+      let instruccion = document.getElementsByClassName("clicable");
+      if (desplegada == false) {
+        navbarSpan.style.display = "inline-block";
+        navbar.style.height = "24%";
+        instruccion.innerHTML = "Regresar a inicio"
+        desplegada = true;
+      } else {
+        navbarSpan.style.display = "none";
+        navbar.style.height = "10%";
+        instruccion.innerHTML = "Volver"
+        desplegada = false;
+      }
+
+    }
+  </script>
+</body>
+
+</html>

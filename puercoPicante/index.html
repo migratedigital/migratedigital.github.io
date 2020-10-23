@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/master.css">
+    <title>Menú Cerdo Picante</title>
+  </head>
+  <body>
+    <div class="container">
+      <img src="imgs/cerdo.png" alt="ilustracion base comida">
+      <p class="titulo">Cerdo Picante</p>
+    </div>
+
+    <div class="botonera">
+        <a href="tel:+2222323138">
+          <div class="boton">Llámanos</div>
+        </a>
+        <a href="https://www.google.com.mx/maps/dir//Cerdo+Picante,+Av.+Don+Juan+de+Palafox+y.+Mendoza+214,+Centro,+72000+Puebla,+Pue./@19.0433371,-98.2311501,13z/data=!4m9!4m8!1m0!1m5!1m1!1s0x85cfc0e649565861:0x47b9323531aa79a6!2m2!1d-98.1961305!2d19.0432593!3e0">
+          <div class="boton">Visítanos</div>
+        </a>
+    </div>
+
+    <div class="final">
+        <nav id="navbar" onclick="mostrar();">
+          <span id="clic">Haz clic para ver menú</span>
+          <div style="padding: 1rem 0;"></div>
+          <span id="contenido-nav">
+          <a href="templates/alimentos.html">
+            <div class="tarjeta">
+              Hamburguesas y Pizza
+            </div>
+          </a>
+          <div style="padding: 1rem 0;"></div>
+          <a href="templates/bebidas.html">
+            <div class="tarjeta">
+              Bebidas y coctelería
+            </div>
+          </a>
+          <div style="padding: 1rem 0;"></div>
+          <a href="templates/snacks.html">
+            <div class="tarjeta">
+              Snacks y hotdogs
+            </div>
+          </a>
+          </span>
+        </nav>
+
+    </div>
+
+    <p id="footer">MigrateDigital &#169; Todos los derechos reservados</p>
+
+    <script type="text/javascript">
+      let navbarSpan = document.getElementById("contenido-nav");
+      titulo = document.getElementsByClassName("titulo")[0];
+      let desplegada = false;
+      function mostrar(){
+        let navbar = document.getElementById("navbar");
+        let footer = document.getElementById("footer");
+        let instruccion = document.getElementById("clic");
+        if (desplegada == false){
+          navbarSpan.style.display = "inline-block";
+          navbar.style.height = "48%";
+          instruccion.innerHTML = "Clic para colapsar menú";
+          footer.style.display = "none";
+          titulo.style.marginBottom = "0.4rem";
+          desplegada = true;
+        } else {
+          navbarSpan.style.display = "none";
+          navbar.style.height = "10%";
+          instruccion.innerHTML = "Haz clic para ver menú";
+          footer.style.display = "inline-block";
+          titulo.style.marginBottom = "6.7rem";
+          desplegada = false;
+        }
+
+      }
+
+
+      titulo.style.fontSize = "6.8rem";
+      tituloSecundario = document.getElementById("clic");
+      tituloSecundario.style.letterSpacing = "-4px";
+    </script>
+  </body>
+</html>

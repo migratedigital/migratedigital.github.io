@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Gruesa+Libre&family=Cabin+Sketch:wght@400;700&family=UnifrakturCook:wght@700&display=swap');
+
+
+:root {
+  font-size: 16px;
+  --color-fondo: #312b28;
+  --cafe: #39312f;
+  --naranja: rgb(37,119,40);
+  --blancuzco: #ded7b6;
+}
+
+.ilustracion {
+  bottom: 0;
+  margin-bottom: 0;
+  height: 0.4rem;
+  width: 0.4rem;
+}
+
+body {
+  background-color: var(--color-fondo);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  text-align: center;
+  margin: auto;
+  width: 60%;
+  display: block;
+}
+
+.titulo {
+  font-family: 'UnifrakturCook', cursive;
+  text-shadow: -4px 4px 4px #fff;
+  margin-top: 0.8rem;
+  color: #fff;
+  transition: 2s;
+}
+
+.titulo-secundario {
+  font-family: 'UnifrakturCook', cursive;
+  font-weight: 200;
+  font-size: 9.5em;
+  color: #fff;
+}
+
+.container2 {
+  text-align: center;
+  display: inline-block;
+}
+
+.flexionado {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.final {
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.finali {
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#clic {
+  font-size: 5rem;
+  letter-spacing: 6px;
+  font-family: 'Cabin Sketch', cursive;
+  transition: 3s
+}
+
+.clicable {
+  font-size: 8rem;
+  font-family:'Cabin Sketch',cursive;
+}
+
+.botonera {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.botonera a {
+  background-color: var(--boton);
+  font-family: 'Cabin Sketch',cursive;
+  font-size: 3.4rem;
+  color: var(--blancuzco);
+  text-decoration: none;
+}
+
+.boton {
+  border: 2px dashed var(--blancuzco);
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+.card {
+  font-size: 6rem;
+  font-family: 'Averia Gruesa Libre', cursive;
+  color: #fff;
+  width: 40%;
+  border-radius: 19px;
+  margin-bottom: 2.2rem;
+  box-shadow: 0 10px 12px 0 rgba(255, 255, 255, 0.2), 0 8px 22px 0 rgba(255, 255, 255, 0.2);
+}
+
+#navbar {
+  bottom: 0;
+  width: 96%;
+  height: 10%;
+  position: fixed;
+  letter-spacing: 3px;
+  color: var(--color-fondo);
+  font-family: 'Nova Round', cursive;
+  background-color: var(--blancuzco);
+  border-top-left-radius: 36px;
+  border-top-right-radius: 36px;
+  transition: ease-out;
+  transition-duration: 0.65s;
+}
+
+#contenido-nav {
+  display: none;
+}
+
+#navbar a {
+  color: var(--cafe);
+  font-family: 'UnifrakturCook';
+  text-shadow: -3px 5px 8px var(--color-fondo);
+  text-decoration: none;
+}
+
+#navbar:visited a, #navbar:active a {
+  color: #131313;
+}
+
+#footer {
+  bottom: 0;
+  font-family:'IBM Plex Sans';
+  font-size: 2.05rem;
+  color:#fff;
+  position: fixed;
+  display: inline-block;
+  right: 15%;
+  margin-bottom: 20%;
+}
+
+.tarjeta {
+  border: 4px dashed var(--cafe);
+  /*padding: 1rem 4rem;*/
+  padding: 2rem 2rem;
+  font-size: 4rem;
+}
+
+.tarjeta2 {
+  border: 2px solid #000;
+  /*padding: 1rem 4rem;*/
+  padding: 2rem 5rem;
+  font-size: 7rem;
+  position: relative;
+}
+
+.imagen-regresar {
+  position: absolute;
+  top:23%;
+  right: 74%;
+}
+
+.flexionado-horizontal {
+  display: flex;
+  flex-direction: column;
+}
+
+.horizontalCard {
+  width: 94%;
+  margin-left: 40px;
+  font-size: 5rem;
+  font-family: 'IBM Plex Sans', cursive;
+  color: #fff;
+  text-align: left;
+  border-radius: 19px;
+  box-shadow: 0 10px 12px 0 rgba(255, 255, 255, 0.2), 0 8px 22px 0 rgba(255, 255, 255, 0.2);
+}
+
+.horizontalCard p {
+  margin: 2rem 4.6rem;
+  padding: 1.2rem 2.2rem;
+  font-family: 'Averia Gruesa Libre',cursive;
+}
