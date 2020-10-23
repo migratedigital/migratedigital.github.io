@@ -30,4 +30,4 @@ function efecto(){
   tituloSecundario.style.letterSpacing = "-4px";
 };
 
-document.addEventListener("load",efecto());
+document.addEventListener("DOMContentLoaded",efecto());
