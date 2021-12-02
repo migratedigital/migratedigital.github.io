@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&family=Ubuntu+Condensed&display=swap');
+
+:root {
+  --fondo-general: #fff;
+  --fondo: #f87307;
+  --bordes: #fff;
+  --letras: #141414;
+  --fondo-tarjeta: #f89b07;
+  --sombras: #f89b07;
+  --overlay: #ae5105;
+}
+
+body {
+  background-color: var(--fondo);
+}
+
+h2 {
+  font-family: 'Merienda One', cursive;
+  font-size: 4rem;
+  color: var(--bordes);
+  text-shadow: -6px 4px 5px var(--letras);
+}
+
+.super-container {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.img-container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.overlay-left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--overlay);
+  overflow: hidden;
+  width: 0;
+  height: 70%;
+  border-radius: 4px;
+  opacity: 0.9;
+  transition: .4s ease;
+  display: block;
+}
+
+.overlay-right {
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  background-color: var(--overlay);
+  overflow: hidden;
+  width: 0;
+  height: 70%;
+  border-radius: 4px;
+  opacity: 0.9;
+  transition: .4s ease;
+  display: block;
+}
+
+.img-container:hover .overlay-right {
+  width: 100%;
+  left: 0;
+  top: 0.05%;
+  height: 104%;
+  display: block;
+}
+
+.img-container:hover .overlay-left {
+  width: 100%;
+  top: 0.05%;
+  height: 104%;
+  display: block;
+}
+
+.text {
+  white-space: nowrap;
+  color: white;
+  font-size: 4rem;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.card {
+  text-align: center;
+  display: inline-block;
+  width: 90%;
+  font-family: 'Merienda One', sans-serif;
+  color: var(--letras);
+  font-size: 2.1rem;
+  border-radius: 8px;
+  border: 0.5rem solid var(--bordes);
+  background-color: var(--fondo-tarjeta);
+  height: 100%;
+}
+
+.descripcion {
+  font-size: 1.8rem;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  color: var(--letras);
+}
+
+#clic {
+  opacity: "0.99";
+}
+
+#menu {
+  text-align: center;
+  background-color: rgb(255, 255, 51, 0.7);
+  padding: 0.5%;
+  top: 0;
+  height: 8%;
+  border-bottom: 8px solid var(--fondo-tarjeta);
+  border-bottom-right-radius: 90px;
+  border-bottom-left-radius: 90px;
+  position: fixed;
+  width: 97.5%;
+  z-index: 9;
+  transition: 0.3s ease-out;
+}
+
+#menu span {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-family: 'Merienda One', cursive;
+  color: var(--letras);
+  font-size: 4rem;
+}
+
+#contenido-menu {
+  visibility: hidden;
+  transition-property: visibility, opacity;
+  transition-duration: 0s, 0.2s;
+}
+
+#contenido-menu.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition-property: opacity, visibility;
+  transition-duration: 0.5s, 0.5s;
+  transition-delay: 0s, 0.2s;
+}
+
+#contenido-menu p {
+  font-family: 'Merienda One', cursive;
+  color: var(--letras);
+  font-size: 2.8rem;
+}
+
+.atag {
+  display: block;
+}
+
+.circulo {
+  margin-top: 3rem;
+  color: var(--letras);
+  background-color: var(--fondo-tarjeta);
+  border-radius: 90px;
+  padding: 1.6rem;
+  box-shadow: 0 4px 6px #000;
+}
+
+#shake {
+  display: block;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  color: var(--letras);
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-size: 3rem;
+  height: 3%;
+  background-color: rgb(255, 255, 51, 0.9);
+}
