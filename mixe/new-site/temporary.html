@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <!--Estilos temporales -->
+    <link rel="stylesheet" href="temp-styles.css" />
+    <link rel="stylesheet" href="../css/master.css" />
+
+    <!-- Estilos oficiales 
+    <link rel="stylesheet" href="css/master.css">
+    -->
+    <title>Menú Mixe</title>
+  </head>
+
+  <body>
+    <div class="alert">
+      <span class="closebtn" onclick="this.parentElement.style.display='none';"
+        >&times;</span
+      >
+      Esta visualización es una prueba
+    </div>
+    <div class="container">
+      <span id="logo"
+        ><img src="../imgs/mixe_logo.jpg" alt="ilustracion base comida"
+      /></span>
+      <p id="deseo" class="titulo-secundario">Disfruta tu estancia</p>
+    </div>
+
+    <div class="final">
+      <nav id="navbar" onclick="mostrar();">
+        <span id="clic">Haz clic para ver menú</span>
+        <div style="padding: 1rem 0"></div>
+        <span id="contenido-nav">
+          <a href="temporary-alim.html">
+            <div class="tarjeta">Alimentos</div>
+          </a>
+          <div style="padding: 1.5rem 0"></div>
+          <a href="temporary-bebi.html">
+            <div class="tarjeta">Bebidas</div>
+          </a>
+          <div style="padding: 1.5rem 0"></div>
+          <a href="temporary-crep.html">
+            <div class="tarjeta">Crepas</div>
+          </a>
+        </span>
+      </nav>
+    </div>
+
+    <p id="footer">MigrateDigital &#169; Todos los derechos reservados</p>
+
+    <script type="text/javascript">
+      let navbarSpan = document.getElementById("contenido-nav");
+      let desplegada = false;
+      let footer = document.getElementById("footer");
+      function mostrar() {
+        let navbar = document.getElementById("navbar");
+        let instruccion = document.getElementById("clic");
+        if (desplegada == false) {
+          navbarSpan.style.display = "inline-block";
+          navbar.style.height = "48%";
+          instruccion.innerHTML = "Clic para colapsar menú";
+          footer.style.display = "none";
+          desplegada = true;
+        } else {
+          navbarSpan.style.display = "none";
+          footer.style.display = "inline-block";
+          navbar.style.height = "10%";
+          instruccion.innerHTML = "Haz clic para ver menú";
+          desplegada = false;
+        }
+      }
+    </script>
+  </body>
+</html>

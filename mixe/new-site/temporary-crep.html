@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <!--Estilos temporales -->
+    <link rel="stylesheet" href="temp-styles.css" />
+    <link rel="stylesheet" href="../css/master.css" />
+
+    <!-- Estilos oficiales 
+    <link rel="stylesheet" href="css/master.css">
+    -->
+    <title>Crepas Mixe</title>
+  </head>
+
+  <body>
+    <div class="container2">
+      <div class="alert">
+        <span
+          class="closebtn"
+          onclick="this.parentElement.style.display='none';"
+          >&times;</span
+        >
+        Esta visualización es una prueba
+      </div>
+      <div style="width: 50%">
+        <img src="../imgs/crepas_opt.png" alt="ilustracion base comida" />
+      </div>
+      <p class="titulo-secundario">Crepas dulces</p>
+
+      <div class="flexionado">
+        <div class="card">
+          <p>Cajeta, nutella</p>
+          <p>$40</p>
+        </div>
+        <div class="card">
+          <p>Fresa, zarzamora, lechera</p>
+          <p>$37</p>
+        </div>
+      </div>
+
+      <div style="padding-top: 7rem"></div>
+
+      <p class="titulo-secundario">Crepas saladas</p>
+
+      <div class="flexionado">
+        <div class="card">
+          <p>Jamón, queso</p>
+          <p>$45</p>
+        </div>
+        <div class="card">
+          <p>Atún, hawaiano, Crepizza</p>
+          <p>$50</p>
+        </div>
+      </div>
+
+      <div style="padding-top: 7rem"></div>
+
+      <p class="titulo-secundario">Extras</p>
+
+      <div class="flexionado-horizontal">
+        <div class="horizontalCard" id="helado">
+          <p>Plátano, philadelphia, fresa, durazno, nuez</p>
+          <p>$10</p>
+        </div>
+        <div style="padding-top: 3.4rem"></div>
+        <div class="horizontalCard" id="helado">
+          <p>Helado</p>
+          <p>$15</p>
+        </div>
+      </div>
+
+      <div style="padding-top: 35em"></div>
+
+      <div class="finali">
+        <nav id="navbar" onclick="mostrar();">
+          <span class="clicable">Volver</span>
+          <div style="padding: 1rem 0"></div>
+          <span id="contenido-nav">
+            <a href="temporary.html">
+              <div class="tarjeta2">
+                <span class="imagen-regresar">
+                  <img
+                    style="height: 1em; width: auto"
+                    src="../imgs/regreso.png"
+                    alt="back"
+                  />
+                </span>
+                <span style="padding-right: 5rem"></span>
+                Inicio
+              </div>
+            </a>
+            <div style="padding: 1.5rem 0"></div>
+          </span>
+        </nav>
+      </div>
+    </div>
+    <script type="text/javascript">
+      let navbarSpan = document.getElementById("contenido-nav");
+      let desplegada = false;
+
+      function mostrar() {
+        let navbar = document.getElementById("navbar");
+        let instruccion = document.getElementsByClassName("clicable");
+        if (desplegada == false) {
+          navbarSpan.style.display = "inline-block";
+          navbar.style.height = "24%";
+          instruccion.innerHTML = "Regresar a inicio";
+          desplegada = true;
+        } else {
+          navbarSpan.style.display = "none";
+          navbar.style.height = "10%";
+          instruccion.innerHTML = "Volver";
+          desplegada = false;
+        }
+      }
+    </script>
+  </body>
+</html>
