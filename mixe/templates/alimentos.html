@@ -1,180 +1,204 @@
 <!DOCTYPE html>
-<html lang="es" dir="ltr">
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <!--Estilos temporales -->
+    <link rel="stylesheet" href="temp-styles.css" />
+    <link rel="stylesheet" href="../css/master.css" />
 
-<head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="../css/master.css">
-  <title>Alimentos Mixe</title>
-</head>
+    <!-- Estilos oficiales 
+    <link rel="stylesheet" href="css/master.css">
+    -->
+    <title>Alimentos Mixe</title>
+  </head>
 
-<body>
-  <div class="container2">
-    <span style="display:none; font-size: 1px;"></span>
-    <span class="ilustracion"><img src="../imgs/chapata_opt.png" alt="ilustracion base comida"></span>
-    <p class="titulo-secundario">Chapatas</p>
-
-    <div class="flexionado">
-      <div class="card">
-        <p>Queso, jamón y salami</p>
-        <p>$60</p>
+  <body>
+    <div class="container2">
+      <div class="alert">
+        <span
+          class="closebtn"
+          onclick="this.parentElement.style.display='none';"
+          >&times;</span
+        >
+        Esta visualización es una prueba
       </div>
-      <div class="card">
-        <p>Queso y pollo</p>
-        <p>$70</p>
+      <span style="display: none; font-size: 1px"></span>
+      <span class="ilustracion"
+        ><img src="../imgs/chapata_opt.png" alt="ilustracion base comida"
+      /></span>
+      <p class="titulo-secundario">Chapatas</p>
+
+      <div class="flexionado">
+        <div class="card">
+          <p>Queso, jamón y salami</p>
+          <p>$70</p>
+        </div>
+        <div class="card">
+          <p>Queso y pollo</p>
+          <p>$80</p>
+        </div>
+      </div>
+      <div style="padding-top: 7rem"></div>
+      <!-- IDEA: Por si aumenta el número de chapatas -->
+
+      <div class="flexionado">
+        <div class="card">
+          <p>Jamón serrano</p>
+          <p>$95</p>
+        </div>
+        <!-- <div class="card">
+            <p>Hotcakes</p>
+            <p>$65</p>
+          </div> -->
+      </div>
+
+      <p class="titulo-secundario">Sandwich</p>
+
+      <div class="flexionado">
+        <div class="card">
+          <p>Jamón con queso y ensalada</p>
+          <p>$60</p>
+        </div>
+        <div class="card">
+          <p>Pollo con queso</p>
+          <p>$70</p>
+        </div>
+      </div>
+      <div style="padding-top: 7rem"></div>
+      <div class="flexionado">
+        <div class="card">
+          <p>Atún con ensalada</p>
+          <p>$60</p>
+        </div>
+        <!-- IDEA:  -->
+        <div class="card" id="tarjetaInvisible">
+          <p>alimento</p>
+          <p>$precio</p>
+        </div>
+      </div>
+
+      <div style="padding-top: 7rem"></div>
+
+      <p class="titulo-secundario">Ensaladas</p>
+
+      <div class="flexionado-horizontal">
+        <div class="horizontalCard">
+          <p>
+            Espinaca, lechuga, jitomate, cherry, germen, toronja, arándano,
+            queso manchego y nuez
+          </p>
+          <p>$50</p>
+        </div>
+        <div style="padding-top: 3.4rem"></div>
+        <div class="horizontalCard">
+          <p>Lechuga, pepino, manzana verde, nueces, limón, apio</p>
+          <p>$50</p>
+        </div>
+      </div>
+
+      <div class="flexionado-horizontal">
+        <div class="horizontalCard">
+          <p>
+            Ensalada de pollo: lechuga, nuez, frutos rojos, pechuga de pollo,
+            jitomate cherry y aceite de oliva
+          </p>
+          <p>$50</p>
+        </div>
+      </div>
+
+      <div style="padding-top: 3.6rem"></div>
+      <div class="ilustracion">
+        <img src="../imgs/tipichus_opt.jpg" alt="ilustracion tipichus" />
+      </div>
+
+      <div style="padding-top: 0.1rem"></div>
+
+      <p class="titulo-secundario">Tipichus</p>
+
+      <div class="flexionado-horizontal">
+        <div class="horizontalCard">
+          <p>Cajeta, fresa, zarzamora, lechera, nutella, crema pastelera</p>
+          <p>$20</p>
+        </div>
+      </div>
+
+      <div style="padding-top: 7rem"></div>
+
+      <p class="titulo-secundario" id="chapatas">Más</p>
+
+      <div class="flexionado">
+        <div class="card">
+          <p>Plátanos machos</p>
+          <p>$35</p>
+        </div>
+        <div class="card">
+          <p>Hot dog (20cm)</p>
+          <p>$55</p>
+        </div>
+      </div>
+      <div style="padding-top: 7rem"></div>
+      <div class="flexionado">
+        <div class="card">
+          <p>Hot dog con queso y tocino</p>
+          <p>$70</p>
+        </div>
+        <div class="card">
+          <p>Duraznos en almíbar</p>
+          <p>$45</p>
+        </div>
+      </div>
+      <div style="padding-top: 7rem"></div>
+      <div class="flexionado">
+        <div class="card">
+          <p>Pay de limón</p>
+          <p>$25</p>
+        </div>
+      </div>
+
+      <div style="padding-top: 35em"></div>
+
+      <div class="finali">
+        <nav id="navbar" onclick="mostrar();">
+          <span class="clicable">Volver</span>
+          <div style="padding: 1rem 0"></div>
+          <span id="contenido-nav">
+            <a href="index.html">
+              <div class="tarjeta2">
+                <span class="imagen-regresar">
+                  <img
+                    style="height: 1em; width: auto"
+                    src="../imgs/regreso.png"
+                    alt="back"
+                  />
+                </span>
+                <span style="padding-right: 5rem"></span>
+                Inicio
+              </div>
+            </a>
+            <div style="padding: 1.5rem 0"></div>
+          </span>
+        </nav>
       </div>
     </div>
-    <div style="padding-top:7rem;"></div>
-    <!-- IDEA: Por si aumenta el número de chapatas
+    <script type="text/javascript">
+      let navbarSpan = document.getElementById("contenido-nav");
+      let desplegada = false;
 
-    <div class="flexionado">
-      <div class="card">
-        <p>Omelette</p>
-        <p>$25</p>
-      </div>
-      <div class="card">
-        <p>Hotcakes</p>
-        <p>$65</p>
-      </div>
-    </div>
-
-   -->
-
-    <p class="titulo-secundario">Sandwich</p>
-
-    <div class="flexionado">
-      <div class="card">
-        <p>Jamón con queso y ensalada</p>
-        <p>$50</p>
-      </div>
-      <div class="card">
-        <p>Pollo con queso</p>
-        <p>$60</p>
-      </div>
-    </div>
-    <div style="padding-top:7rem;"></div>
-    <div class="flexionado">
-      <div class="card">
-        <p>Atún con ensalada</p>
-        <p>$50</p>
-      </div>
-      <!-- IDEA:  -->
-      <div class="card" id="tarjetaInvisible">
-        <p>alimento</p>
-        <p>$precio</p>
-      </div>
-    </div>
-
-    <div style="padding-top:7rem;"></div>
-
-    <p class="titulo-secundario">Ensaladas</p>
-
-    <div class="flexionado-horizontal">
-      <div class="horizontalCard">
-        <p>Espinaca, lechuga, jitomate, cherry, germen, toronja, arándano, queso manchego y nuez</p>
-        <p>$50</p>
-      </div>
-      <div style="padding-top:3.4rem;"></div>
-      <div class="horizontalCard">
-        <p>Lechuga, pepino, manzana verde, nueces, limón, apio</p>
-        <p>$50</p>
-      </div>
-    </div>
-
-    <div style="padding-top:3.6rem;"></div>
-    <div class="ilustracion">
-      <img src="../imgs/tipichus_opt.jpg" alt="ilustracion tipichus">
-    </div>
-
-    <div style="padding-top:0.1rem;"></div>
-
-    <p class="titulo-secundario">Tipichus</p>
-
-    <div class="flexionado-horizontal">
-      <div class="horizontalCard">
-        <p>Cajeta, fresa, zarzamora, lechera, nutella, crema pastelera</p>
-        <p>$17</p>
-      </div>
-    </div>
-
-    <div style="padding-top:7rem;"></div>
-
-    <p class="titulo-secundario" id="chapatas">Más</p>
-
-    <div class="flexionado">
-      <div class="card">
-        <p>Plátanos machos</p>
-        <p>$30</p>
-      </div>
-      <div class="card">
-        <p>Hot dog (20cm)</p>
-        <p>$45</p>
-      </div>
-    </div>
-    <div style="padding-top:7rem;"></div>
-    <div class="flexionado">
-      <div class="card">
-        <p>Hot dog con queso y tocino</p>
-        <p>$60</p>
-      </div>
-      <div class="card">
-        <p>Duraznos en almíbar</p>
-        <p>$35</p>
-      </div>
-    </div>
-    <div style="padding-top:7rem;"></div>
-    <div class="flexionado">
-      <div class="card">
-        <p>Pay de limón</p>
-        <p>$25</p>
-      </div>
-      <div class="card">
-        <p>Fondue</p>
-        <p>$70</p>
-      </div>
-    </div>
-
-    <div style="padding-top:35em;"></div>
-
-    <div class="finali">
-      <nav id="navbar" onclick="mostrar();">
-        <span class="clicable">Volver</span>
-        <div style="padding: 1rem 0;"></div>
-        <span id="contenido-nav">
-          <a href="../index.html">
-            <div class="tarjeta2">
-              <span class="imagen-regresar">
-                <img style="height:1em; width:auto;" src="../imgs/regreso.png" alt="back">
-              </span>
-              <span style="padding-right:5rem;"></span>
-              Inicio
-            </div>
-          </a>
-          <div style="padding: 1.5rem 0;"></div>
-        </span>
-      </nav>
-    </div>
-  </div>
-  <script type="text/javascript">
-    let navbarSpan = document.getElementById("contenido-nav");
-    let desplegada = false;
-
-    function mostrar() {
-      let navbar = document.getElementById("navbar");
-      let instruccion = document.getElementsByClassName("clicable");
-      if (desplegada == false) {
-        navbarSpan.style.display = "inline-block";
-        navbar.style.height = "24%";
-        instruccion.innerHTML = "Regresar a inicio"
-        desplegada = true;
-      } else {
-        navbarSpan.style.display = "none";
-        navbar.style.height = "10%";
-        instruccion.innerHTML = "Volver"
-        desplegada = false;
+      function mostrar() {
+        let navbar = document.getElementById("navbar");
+        let instruccion = document.getElementsByClassName("clicable");
+        if (desplegada == false) {
+          navbarSpan.style.display = "inline-block";
+          navbar.style.height = "24%";
+          instruccion.innerHTML = "Regresar a inicio";
+          desplegada = true;
+        } else {
+          navbarSpan.style.display = "none";
+          navbar.style.height = "10%";
+          instruccion.innerHTML = "Volver";
+          desplegada = false;
+        }
       }
-
-    }
-  </script>
-</body>
-
+    </script>
+  </body>
 </html>

@@ -1,216 +1,272 @@
 <!DOCTYPE html>
-<html lang="es" dir="ltr">
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <!--Estilos temporales -->
+    <link rel="stylesheet" href="temp-styles.css" />
+    <link rel="stylesheet" href="../css/master.css" />
 
-<head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="../css/master.css">
-  <title>Bebidas Mixe</title>
-</head>
+    <!-- Estilos oficiales 
+    <link rel="stylesheet" href="css/master.css">
+    -->
+    <title>Bebidas Mixe</title>
+  </head>
 
-<body>
-  <div class="container2">
-    <div style="padding-top:0.01rem;"></div>
-    <div class="ilustracion">
-      <img src="../imgs/cafe_opt.jpg" alt="ilustracion base comida">
+  <body>
+    <div class="container2">
+      <div class="alert">
+        <span
+          class="closebtn"
+          onclick="this.parentElement.style.display='none';"
+          >&times;</span
+        >
+        Esta visualización es una prueba
+      </div>
+      <div style="padding-top: 0.01rem"></div>
+      <div class="ilustracion">
+        <img src="../imgs/cafe_opt.jpg" alt="ilustracion base comida" />
+      </div>
+      <p class="titulo-secundario">Calientes</p>
+
+      <div class="flexionado">
+        <div class="card">
+          <p>Café de olla</p>
+          <p>$25</p>
+        </div>
+        <div class="card">
+          <p>Café con leche</p>
+          <p>$30</p>
+        </div>
+      </div>
+      <div style="padding-top: 7rem"></div>
+      <div class="flexionado">
+        <div class="card">
+          <p>Espresso</p>
+          <p>$25</p>
+        </div>
+        <div class="card">
+          <p>Americano</p>
+          <p>$20</p>
+        </div>
+      </div>
+
+      <div style="padding-top: 3rem"></div>
+      <div class="ilustracion">
+        <img src="../imgs/tasachoco_opt.jpg" alt="ilustracion tasa chocolate" />
+      </div>
+
+      <div style="padding-top: 7rem"></div>
+      <div class="flexionado">
+        <div class="card">
+          <p>Chocolate en agua</p>
+          <p>$25</p>
+        </div>
+        <div class="card">
+          <p>Chocolate con leche</p>
+          <p>$30</p>
+        </div>
+      </div>
+      <div style="padding-top: 7rem"></div>
+      <div class="flexionado">
+        <div class="card">
+          <p>Té</p>
+          <p>$20</p>
+        </div>
+        <div class="card">
+          <p>Té chai</p>
+          <p>$30</p>
+        </div>
+      </div>
+      <div style="padding-top: 7rem"></div>
+      <div class="flexionado">
+        <div class="card">
+          <p>Té chai latte</p>
+          <p>$35</p>
+        </div>
+        <div class="card">
+          <p>Capuccino</p>
+          <p>$35</p>
+        </div>
+      </div>
+      <div style="padding-top: 7rem"></div>
+      <div class="flexionado">
+        <div class="card">
+          <p>Capuccino vainilla</p>
+          <p>$40</p>
+        </div>
+        <div class="card">
+          <p>Mokachino</p>
+          <p>$40</p>
+        </div>
+        <!-- <div class="card">
+          <p>Capuccino congelado</p>
+          <p>$40</p>
+        </div> -->
+      </div>
+      <div style="padding-top: 7rem"></div>
+      <div class="flexionado">
+        <div class="card">
+          <p>Capuccino con crema irlandesa</p>
+          <p>$45</p>
+        </div>
+        <div class="card">
+          <p>Latte</p>
+          <p>$35</p>
+        </div>
+      </div>
+      <div style="padding-top: 7rem"></div>
+      <div class="flexionado">
+        <div class="card">
+          <p>Latte vainilla</p>
+          <p>$40</p>
+        </div>
+      </div>
+
+      <div style="padding-top: 3.8rem"></div>
+      <div class="ilustracion">
+        <img src="../imgs/bebida_opt.jpg" alt="ilustracion bebida fria" />
+      </div>
+
+      <div style="padding-top: 1rem"></div>
+
+      <p class="titulo-secundario" id="frias">Frías</p>
+
+      <p class="titulo-terciario">Esquimos</p>
+      <div style="padding-bottom: 18.4rem"></div>
+
+      <div class="flexionado">
+        <div class="card">
+          <p>Pistache, rompope, chocolate</p>
+          <p>$25</p>
+        </div>
+        <div class="card">
+          <p>Zarzamora, vainilla, nuez, fresa</p>
+          <p>$20</p>
+        </div>
+      </div>
+
+      <div style="padding-bottom: 2rem"></div>
+      <p class="titulo-terciario">Frappés</p>
+      <div style="padding-bottom: 18.4rem"></div>
+
+      <div class="flexionado">
+        <div class="card">
+          <p>Oreo, gansito, chocorrol</p>
+          <p>$40</p>
+        </div>
+        <div class="card">
+          <p>Mazapán, amaretto</p>
+          <p>$35</p>
+        </div>
+      </div>
+
+      <div style="padding-bottom: 2rem"></div>
+      <p class="titulo-terciario">Chamoyadas</p>
+      <div style="padding-bottom: 18.4rem"></div>
+
+      <div class="flexionado">
+        <div class="card">
+          <p>Mango, fresa, guanábana</p>
+          <p>$35</p>
+        </div>
+        <div class="card">
+          <p>Carambola, maracuyá</p>
+          <p>$30</p>
+        </div>
+      </div>
+
+      <div style="padding-bottom: 2rem"></div>
+      <p class="titulo-terciario">Tapioca</p>
+      <div style="padding-bottom: 18.4rem"></div>
+
+      <div class="flexionado">
+        <div class="card">
+          <p>Mango, fresa, guanábana</p>
+          <p>$45</p>
+        </div>
+      </div>
+
+      <div style="padding-bottom: 2rem"></div>
+      <p class="titulo-terciario">Helado</p>
+      <div style="padding-bottom: 18.4rem"></div>
+
+      <div class="flexionado">
+        <div class="card">
+          <p>Moka helado</p>
+          <p>$40</p>
+        </div>
+      </div>
+
+      <div style="padding-bottom: 2rem"></div>
+      <p class="titulo-terciario">Otros</p>
+      <div style="padding-bottom: 18.4rem"></div>
+
+      <div class="flexionado">
+        <div class="card">
+          <p>Tisana</p>
+          <p>$40</p>
+        </div>
+        <div class="card">
+          <p>Soda italiana</p>
+          <p>$45</p>
+        </div>
+      </div>
+      <div style="padding-top: 8em"></div>
+      <div class="flexionado">
+        <div class="card">
+          <p>Refresco</p>
+          <p>$22</p>
+        </div>
+        <div class="card">
+          <p>Agua fresca</p>
+          <p>$23</p>
+        </div>
+      </div>
+
+      <div style="padding-top: 35em"></div>
+
+      <div class="final">
+        <nav id="navbar" onclick="mostrar();">
+          <span class="clicable">Volver</span>
+          <div style="padding: 1rem 0"></div>
+          <span id="contenido-nav">
+            <a href="index.html">
+              <div class="tarjeta2">
+                <span class="imagen-regresar">
+                  <img
+                    style="height: 1em; width: auto"
+                    src="../imgs/regreso.png"
+                    alt="back"
+                  />
+                </span>
+                <span style="padding-right: 5rem"></span>
+                Inicio
+              </div>
+            </a>
+            <div style="padding: 1.5rem 0"></div>
+          </span>
+        </nav>
+      </div>
     </div>
-    <p class="titulo-secundario">Calientes</p>
+    <script type="text/javascript">
+      let navbarSpan = document.getElementById("contenido-nav");
+      let desplegada = false;
 
-    <div class="flexionado">
-      <div class="card">
-        <p>Café de olla</p>
-        <p>$20</p>
-      </div>
-      <div class="card">
-        <p>Café con leche</p>
-        <p>$23</p>
-      </div>
-    </div>
-    <div style="padding-top:7rem;"></div>
-    <div class="flexionado">
-      <div class="card">
-        <p>Espresso</p>
-        <p>$25</p>
-      </div>
-      <div class="card">
-        <p>Americano</p>
-        <p>$18</p>
-      </div>
-    </div>
-
-    <div style="padding-top:3rem;"></div>
-    <div class="ilustracion">
-      <img src="../imgs/tasachoco_opt.jpg" alt="ilustracion tasa chocolate">
-    </div>
-
-    <div style="padding-top:7rem;"></div>
-    <div class="flexionado">
-      <div class="card">
-        <p>Chocolate en agua</p>
-        <p>$18</p>
-      </div>
-      <div class="card">
-        <p>Chocolate con leche</p>
-        <p>$23</p>
-      </div>
-    </div>
-    <div style="padding-top:7rem;"></div>
-    <div class="flexionado">
-      <div class="card">
-        <p>Té</p>
-        <p>$18</p>
-      </div>
-      <div class="card">
-        <p>Té chai</p>
-        <p>$25</p>
-      </div>
-    </div>
-    <div style="padding-top:7rem;"></div>
-    <div class="flexionado">
-      <div class="card">
-        <p>Té chai latte</p>
-        <p>$30</p>
-      </div>
-      <div class="card">
-        <p>Capuccino</p>
-        <p>$30</p>
-      </div>
-    </div>
-    <div style="padding-top:7rem;"></div>
-    <div class="flexionado">
-      <div class="card">
-        <p>Capuccino vainilla</p>
-        <p>$35</p>
-      </div>
-      <div class="card">
-        <p>Capuccino congelado</p>
-        <p>$40</p>
-      </div>
-    </div>
-    <div style="padding-top:7rem;"></div>
-    <div class="flexionado">
-      <div class="card">
-        <p>Capuccino con crema irlandesa</p>
-        <p>$40</p>
-      </div>
-      <div class="card">
-        <p>Latte</p>
-        <p>$30</p>
-      </div>
-    </div>
-    <div style="padding-top:7rem;"></div>
-    <div class="flexionado">
-      <div class="card">
-        <p>Latte vainilla</p>
-        <p>$35</p>
-      </div>
-    </div>
-
-    <div style="padding-top:3.8rem;"></div>
-    <div class="ilustracion">
-      <img src="../imgs/bebida_opt.jpg" alt="ilustracion bebida fria">
-    </div>
-
-    <div style="padding-top:1rem;"></div>
-
-    <p class="titulo-secundario" id="frias">Frías</p>
-
-    <p class="titulo-terciario">Esquimos</p>
-    <div style="padding-bottom:18.4rem;"></div>
-
-    <div class="flexionado">
-      <div class="card">
-        <p>Pistache, rompope, chocolate</p>
-        <p>$20</p>
-      </div>
-      <div class="card">
-        <p>Zarzamora, vainilla, nuez, fresa</p>
-        <p>$20</p>
-      </div>
-    </div>
-
-    <div style="padding-bottom:2rem;"></div>
-    <p class="titulo-terciario">Frappés</p>
-    <div style="padding-bottom:18.4rem;"></div>
-
-    <div class="flexionado">
-      <div class="card">
-        <p>Oreo, gansito, chocorrol</p>
-        <p>$35</p>
-      </div>
-      <div class="card">
-        <p>Mazapán, amaretto</p>
-        <p>$35</p>
-      </div>
-    </div>
-
-    <div style="padding-bottom:2rem;"></div>
-    <p class="titulo-terciario">Chamoyadas</p>
-    <div style="padding-bottom:18.4rem;"></div>
-
-    <div class="flexionado">
-      <div class="card">
-        <p>Mango, fresa, guanábana</p>
-        <p>$30</p>
-      </div>
-      <div class="card">
-        <p>Carambola, maracuyá</p>
-        <p>$30</p>
-      </div>
-    </div>
-
-    <div style="padding-bottom:2rem;"></div>
-    <p class="titulo-terciario">Tapioca</p>
-    <div style="padding-bottom:18.4rem;"></div>
-
-    <div class="flexionado">
-      <div class="card">
-        <p>Mango, fresa, guanábana</p>
-        <p>$40</p>
-      </div>
-    </div>
-
-    <div style="padding-top:35em;"></div>
-
-    <div class="final">
-      <nav id="navbar" onclick="mostrar();">
-        <span class="clicable">Volver</span>
-        <div style="padding: 1rem 0;"></div>
-        <span id="contenido-nav">
-          <a href="../index.html">
-            <div class="tarjeta2">
-              <span class="imagen-regresar">
-                <img style="height:1em; width:auto;" src="../imgs/regreso.png" alt="back">
-              </span>
-              <span style="padding-right:5rem;"></span>
-              Inicio
-            </div>
-          </a>
-          <div style="padding: 1.5rem 0;"></div>
-        </span>
-      </nav>
-    </div>
-  </div>
-  <script type="text/javascript">
-    let navbarSpan = document.getElementById("contenido-nav");
-    let desplegada = false;
-
-    function mostrar() {
-      let navbar = document.getElementById("navbar");
-      let instruccion = document.getElementsByClassName("clicable");
-      if (desplegada == false) {
-        navbarSpan.style.display = "inline-block";
-        navbar.style.height = "24%";
-        instruccion.innerHTML = "Regresar a inicio"
-        desplegada = true;
-      } else {
-        navbarSpan.style.display = "none";
-        navbar.style.height = "10%";
-        instruccion.innerHTML = "Volver"
-        desplegada = false;
+      function mostrar() {
+        let navbar = document.getElementById("navbar");
+        let instruccion = document.getElementsByClassName("clicable");
+        if (desplegada == false) {
+          navbarSpan.style.display = "inline-block";
+          navbar.style.height = "24%";
+          instruccion.innerHTML = "Regresar a inicio";
+          desplegada = true;
+        } else {
+          navbarSpan.style.display = "none";
+          navbar.style.height = "10%";
+          instruccion.innerHTML = "Volver";
+          desplegada = false;
+        }
       }
-
-    }
-  </script>
-</body>
-
+    </script>
+  </body>
 </html>
